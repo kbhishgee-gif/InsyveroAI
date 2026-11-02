@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>InsyveroAI | Business Intelligence Studio</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>InsyveroAI — Business Intelligence Platform</title><style>
 :root{font-family:Inter,system-ui,Arial,sans-serif;color:#e9eefc;background:#0c1222}*{box-sizing:border-box}body{margin:0}header{padding:24px max(22px,calc((100vw - 1200px)/2));display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #29344b;background:#101a30}.brand{font-weight:850;font-size:24px}.brand span{color:#74e0cb}.tag{font-size:12px;color:#91a7c7}main{max-width:1200px;margin:auto;padding:28px 20px}h1{font-size:34px;margin:0 0 6px}p{color:#aabbd4;line-height:1.5}.top{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}.pill{padding:8px 12px;background:#20384c;border-radius:40px;color:#8df0ce;font-size:12px}.panel{background:#151f34;border:1px solid #2b3b56;border-radius:18px;padding:20px}.upload{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:22px 0}button,.filebtn{background:#70dec5;color:#102339;border:0;padding:12px 17px;border-radius:10px;font-weight:750;cursor:pointer;font-size:14px}button.secondary{background:#273953;color:#e3eaf6}button:disabled{opacity:.5;cursor:not-allowed}input[type=file]{display:none}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:20px 0}.metric .label{font-size:13px;color:#9bafcd}.metric .value{font-size:27px;font-weight:800;margin:9px 0}.metric .note{font-size:12px;color:#9bafcd}.dashboard{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.chart{height:270px;width:100%;display:block}.small{font-size:12px}.assistant{margin-top:18px}.askrow{display:flex;gap:9px;margin:12px 0}input[type=text]{width:100%;padding:13px;border:1px solid #43536d;background:#0f1829;color:white;border-radius:10px;font-size:14px}.chips{display:flex;gap:8px;flex-wrap:wrap}.chips button{padding:9px 11px;font-size:12px}.answer{background:#0d1829;border-left:3px solid #70dec5;padding:16px;border-radius:9px;white-space:pre-wrap;line-height:1.6;min-height:80px;color:#e9effa}.bottom{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}table{border-collapse:collapse;width:100%;font-size:12px}td,th{text-align:left;padding:9px;border-bottom:1px solid #314059}th{color:#93b3c8}.scroll{overflow:auto;max-height:240px}select{background:#1b2b42;color:#fff;border:1px solid #40526d;border-radius:9px;padding:9px}label{font-size:13px;color:#aabbd4}.error{color:#ffb7a7}.ok{color:#8fe3c9}footer{padding:25px;text-align:center;color:#8b9cb6;font-size:12px}@media(max-width:800px){.cards{grid-template-columns:repeat(2,1fr)}.dashboard,.bottom{grid-template-columns:1fr}}@media(max-width:480px){.cards{grid-template-columns:1fr}h1{font-size:27px}.askrow{flex-direction:column}}
 
 /* InsyveroAI Studio — visual redesign, preserving analytical functionality */
@@ -154,6 +154,54 @@ header .brand { color: #f5f7ff !important; -webkit-text-fill-color: #f5f7ff !imp
 header .brand span:not(.brand-mark) { color: #a991ff !important; -webkit-text-fill-color: #a991ff !important; }
 header .brand .brand-mark { color: #c1adff !important; -webkit-text-fill-color: #c1adff !important; }
 .panel.assistant .top strong, .panel.assistant strong, #assistant h1, #assistant h2, #assistant .panel .top strong { color: #f4f6ff !important; -webkit-text-fill-color: #f4f6ff !important; }
+</style><style id="insyvero-premium-saas-v2">
+/* InsyveroAI premium SaaS design layer: visual-only enhancement, no backend changes. */
+:root{--premium-ink:#08101e;--premium-card:#101f35;--premium-line:#263a54;--premium-gold:#e3bf83;--premium-muted:#9cacc4}
+html{scroll-behavior:smooth}body{background:radial-gradient(ellipse 72% 40% at 75% -12%,#1e3653 0%,transparent 80%),#091426!important;color:#eff4ff!important;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif!important}
+::selection{background:#b9975d;color:#091426}
+header{background:rgba(9,19,35,.91)!important;border-bottom:1px solid #24354d!important;backdrop-filter:blur(16px);min-height:78px}
+header .brand{font-size:21px!important;letter-spacing:-.045em}header .brand .brand-mark{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:11px;background:linear-gradient(145deg,#e9c98e,#9b713b);color:#101827!important;-webkit-text-fill-color:#101827!important;margin-right:10px;box-shadow:0 5px 20px #c29c5d25}
+header .brand span:not(.brand-mark){color:#e9c98e!important;-webkit-text-fill-color:#e9c98e!important}
+header .tag{font-size:11px!important;color:#a3b0c3!important;letter-spacing:.01em}
+.v9-sidebar{background:linear-gradient(165deg,#0b1728 0%,#08111e 85%)!important;border-right:1px solid #233248!important;box-shadow:none!important;padding-top:27px!important}
+.v9-logo{font-size:21px!important;letter-spacing:-.05em!important;color:#f4f6ff!important}.v9-logo span{color:#e8c58d!important}
+.v12-nav-label{color:#758ba6!important;font-size:10px!important;letter-spacing:.15em!important}
+.v9-links a{font-size:12.5px!important;color:#aebed3!important;border:1px solid transparent!important;transition:background .2s,border-color .2s,color .2s,transform .2s!important}
+.v9-links a:hover{background:#192c43!important;border-color:#2d4562!important;color:#fff!important;transform:translateX(2px)}
+.v9-links a.active{background:linear-gradient(90deg,#3c362d,#17263a)!important;color:#f5d6a4!important;border:1px solid #755b3e!important;border-left:3px solid #e6bd7b!important;box-shadow:inset 0 0 0 1px #ffffff06}
+.v9-foot{color:#8297b0!important;border-top:1px solid #27384e!important}
+main{max-width:1460px!important;padding-top:33px!important}
+#v6lead{margin-bottom:22px!important}#v6lead h2{font-size:24px!important;letter-spacing:-.055em!important;font-weight:800!important;color:#f5f7fc!important}#v6lead p{color:#9aadc6!important;font-size:13px!important}
+#v6lead .live{background:#102e2b!important;color:#8ce4c2!important;border:1px solid #286e61!important;box-shadow:0 0 0 4px #0e272333!important}
+.hero{background:radial-gradient(circle at 85% 20%,#284e62 0%,transparent 33%),linear-gradient(115deg,#172a47,#101c30 65%,#0c2534)!important;border:1px solid #3a536e!important;border-radius:24px!important;min-height:230px!important;padding:38px 40px!important;box-shadow:0 20px 55px #020b1b55,inset 0 1px #ffffff0e!important}
+.hero:after{border-color:#d5b98317!important}.hero:before{background:#d5b98310!important}.hero .orb{background:linear-gradient(135deg,#f4dba15e,#c4b0a01a)!important;border-color:#d8c59a8a!important;box-shadow:0 15px 45px #0005!important;color:#f3d9a4!important}
+.hero .eyebrow,.eyebrow{color:#e8c58d!important;letter-spacing:.14em!important;font-size:10px!important}
+.hero h1{font-size:clamp(34px,4vw,57px)!important;font-weight:830!important;letter-spacing:-.055em!important;max-width:760px!important;line-height:1.07!important}
+.hero p{font-size:15px!important;color:#c1d1e3!important;line-height:1.7!important;max-width:590px!important}
+.hero .pill{background:#173c3c!important;color:#a3eed6!important;border:1px solid #387b6e!important}
+.panel,.v12-tile{background:linear-gradient(160deg,#15263f,#102036)!important;border:1px solid #2d425e!important;border-radius:17px!important;box-shadow:0 8px 26px #020a181e!important;color:#eaf1fb!important}
+.panel:hover,.v12-tile:hover{border-color:#46627f!important}
+.cards{gap:14px!important}.metric{min-height:145px!important;padding:23px!important}.metric .label{color:#a0b2ca!important;font-size:11px!important;letter-spacing:.07em!important;text-transform:uppercase;font-weight:700!important}
+.metric .value{color:#f7f8fd!important;font-size:clamp(27px,2.6vw,37px)!important;font-variant-numeric:tabular-nums;letter-spacing:-.055em!important}
+.metric .note{color:#8da1bc!important;font-size:11px!important}
+.metric:before{background:#233d54!important;color:#e6c58f!important}
+.v12-heading h1,.v12-tile h3,.panel h2,.panel strong{color:#f3f6fc!important}
+.v12-heading p,.v12-tile p,.panel p,.v12-note{color:#a6b8ce!important}
+.v12-kicker,.section-heading{color:#d4b786!important}
+button,.filebtn{background:linear-gradient(120deg,#e5c48c,#c69a60)!important;color:#142033!important;border:1px solid #e6c994!important;box-shadow:0 5px 18px #a77e4722!important;font-weight:750!important;transition:transform .18s,filter .18s,box-shadow .18s!important}
+button:hover,.filebtn:hover{filter:brightness(1.08);transform:translateY(-1px)!important;box-shadow:0 8px 22px #a77e4733!important}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #f1cd8e!important;outline-offset:3px!important}
+button.secondary,.v8-chat-quick button,.v12-page button.secondary{background:#203650!important;color:#d8e5f6!important;border:1px solid #3a526f!important;box-shadow:none!important}
+.v8-fab{background:linear-gradient(120deg,#e9c98f,#b68b53)!important;color:#111b2a!important;border:1px solid #f2d5a1!important;box-shadow:0 10px 34px #0007!important}
+.v8-chat,.v8-detail,.v8-tour{border-color:#536781!important}
+input[type=text],select{background:#101c2e!important;color:#edf4ff!important;border-color:#3c536f!important}
+input::placeholder{color:#8ea0b8!important}
+.v12-pill{background:#243951!important;color:#d7e5f5!important}
+.v12-stat{color:#f4f6fc!important}.v12-table th,.v12-table td{border-color:#30445e!important}
+footer{background:#08111e!important;color:#8a9fb9!important;border-top:1px solid #22354d!important}
+@media(max-width:850px){main{padding:20px 17px 70px!important}.hero{padding:30px 24px!important}.hero h1{font-size:36px!important}header{min-height:68px}}
+@media(max-width:520px){.hero{padding:26px 21px!important;min-height:200px!important}.hero h1{font-size:32px!important}.metric{padding:16px!important}.metric .value{font-size:26px!important}.cards{gap:9px!important}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 </style></head><body><button class="v9-menu-toggle" id="v9MenuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="v9Sidebar">☰</button><div class="v9-shade" id="v9Shade" hidden></div>
 <aside class="v9-sidebar" id="v9Sidebar" aria-label="Dashboard navigation"><div style="display:flex;align-items:center"><div class="v9-logo">✦ Insyvero<span>AI</span></div><button class="v9-close" id="v9Close" type="button" aria-label="Close navigation">✕</button></div><div class="v9-caption">WORKSPACE</div><nav class="v9-links" id="v9Links"><div class="v12-nav-label">WORKSPACE</div><a href="#overview" class="active"><span class="v9-icon">⌂</span> Overview</a>
 <div class="v12-nav-label">ANALYTICS</div>
