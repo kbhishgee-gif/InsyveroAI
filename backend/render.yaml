@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: insyveroai-api
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: FRONTEND_ORIGIN
+        value: https://kbhishgee-gif.github.io
+      - key: ENABLE_PUBLIC_DEMO_AI
+        value: 'false'
+      - key: OPENAI_MODEL
+        value: gpt-4.1-mini
