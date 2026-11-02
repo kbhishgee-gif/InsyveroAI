@@ -297,8 +297,29 @@ function render(){filtered=valid.filter(r=>(!$('region').value||r.Region===$('re
 function escapeHTML(x){return x.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function draw(id,items,color){let c=$(id),rect=c.getBoundingClientRect(),w=Math.max(300,rect.width),h=270,dpr=window.devicePixelRatio||1;c.width=w*dpr;c.height=h*dpr;let ctx=c.getContext('2d');ctx.scale(dpr,dpr);ctx.clearRect(0,0,w,h);ctx.font='12px system-ui';if(!items.length){ctx.fillStyle='#9aabc5';ctx.fillText('No data available',18,45);return}let max=Math.max(...items.map(x=>x[1]),1),left=items.some(x=>x[0].length>12)?115:80,usable=w-left-70,bh=Math.min(25,(h-25)/items.length-8);items.forEach(([label,value],i)=>{let y=14+i*(h-22)/items.length;ctx.fillStyle='#b6c7e1';ctx.textAlign='right';ctx.fillText(label.length>17?label.slice(0,16)+'…':label,left-9,y+13);ctx.fillStyle=color;ctx.fillRect(left,y,Math.max(1,usable*value/max),bh);ctx.fillStyle='#dce6f7';ctx.textAlign='left';ctx.fillText(value>=1000?'$'+Math.round(value).toLocaleString():money(value),left+Math.max(1,usable*value/max)+6,y+13)})}
 function localAnswer(q){if(!filtered.length)return 'No valid records in this filter. Upload a CSV or change the filters.';let t=q.toLowerCase(),rev=sum(filtered,'Revenue'),cost=sum(filtered,'Cost'),profit=rev-cost,month=group(filtered.map(r=>({...r,Month:r.Date.slice(0,7)})),'Month'),product=group(filtered,'Product'),region=group(filtered,'Region');let scope=`Based on ${filtered.length} valid rows in the current filters. `;if(/what should|what can i do|recommend|reinvest|allocate|spend|decision|next step|investigate|improve|action/.test(t))return scope+`DECISION SUPPORT • RULE-BASED GUIDANCE\n\nVerified from loaded rows: Revenue ${money(rev)}, recorded cost ${money(cost)}, gross profit ${money(profit)}, gross margin ${rev?(100*profit/rev).toFixed(2)+'%':'N/A'}.\n\nOptions to evaluate (not personalized recommendations):\n• Check cash available after operating expenses, taxes, debt payments and owner withdrawals. Gross profit is not free cash.\n• Review product-level profitability and cost definitions before deciding where to reinvest.\n• Compare cash reserves, debt repayment and reinvestment using actual obligations and forecasts.\n\nMissing evidence: full operating expenses, liabilities, cash balance, tax obligations and business goals.\nHuman decision: the business owner or finance manager must validate the records and approve any allocation. No money is moved.`;if(/month|monthly|best period/.test(t)){let v=month[0];return scope+`Highest-revenue month: ${v[0]} with ${money(v[1])}. This is a historical result, not a forecast.`}if(/product|item|sku/.test(t)){let v=product[0];return scope+`Highest-revenue product: ${v[0]} with ${money(v[1])}. Revenue does not establish profitability.`}if(/region|location|territory/.test(t)){let v=region[0];return scope+`Highest-revenue region: ${v[0]} with ${money(v[1])}. Regional comparisons may be affected by different customer bases.`}if(/margin|profit|cost/.test(t))return scope+`Revenue: ${money(rev)}. Recorded cost: ${money(cost)}. Gross profit: ${money(profit)}. Gross margin: ${rev?(100*profit/rev).toFixed(2)+'%':'undefined (zero revenue)'}. Cost coverage and definitions need human confirmation.`;if(/unit|quantity|volume/.test(t))return scope+`Total units: ${sum(filtered,'Quantity').toLocaleString()}. This is the sum of the Quantity column.`;if(/revenue|sales|total/.test(t))return scope+`Total revenue: ${money(rev)}. Calculated by summing the Revenue column.`;if(/summar|overview|performance|insight/.test(t))return scope+`Revenue ${money(rev)}, gross profit ${money(profit)}, margin ${rev?(100*profit/rev).toFixed(1)+'%':'N/A'}. Top product: ${product[0]?.[0]||'N/A'}; top region: ${region[0]?.[0]||'N/A'}; best month: ${month[0]?.[0]||'N/A'}. Review source accuracy, missing records and whether costs include overhead before making decisions.`;return 'Local analytics cannot reliably answer that question. Try asking about total revenue, gross profit, margin, units, best month, top product, or top region. For open-ended questions, start the optional connected AI server. No answer was invented.'}
-const AI_API_BASE = 'https://insyveroai-backend.onrender.com';
-const AI_CONFIGURED = !AI_API_BASE.includes('YOUR-RENDER-SERVICE');
+const AI_API_BASE = 'https://insyveroai-backend.onrender.com'; // Set after deploying your backend. Never place an API key here.
+const AI_CONFIGURED = true;
+let ownerToken = ''; // Memory only; disappears when tab is closed.
+async function ownerSignIn(){
+ const password=prompt('InsyveroAI private AI password (never enter your OpenAI API key):');
+ if(!password)return;
+ try{
+  const response=await fetch(AI_API_BASE+'/api/owner/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password})});
+  const data=await response.json();
+  if(!response.ok)throw Error(data.detail||'Sign-in failed');
+  ownerToken=data.token; $('ai').disabled=false; $('ai').checked=true;
+  $('ownerLogin').textContent='Private AI active (sign in again after 1 hour)';
+  alert('Private AI enabled for this tab. Your password was not saved.');
+ }catch(err){alert('Private AI sign-in failed: '+err.message)}
+}
+function setupOwnerLogin(){
+ const button=document.createElement('button');button.type='button';button.id='ownerLogin';
+ button.textContent='Owner AI sign-in';button.style.cssText='margin:8px 0;padding:9px 14px;border-radius:10px;background:#bda56a;color:#071326;font-weight:700;cursor:pointer';
+ button.addEventListener('click',ownerSignIn);
+ $('ai').closest('label').insertAdjacentElement('afterend',button);
+ $('ai').checked=false;$('ai').disabled=true;
+}
+
 function aiSummary(q){
  const r=sum(filtered,'Revenue'), c=sum(filtered,'Cost');
  const aggregate=(key)=>group(filtered,key).slice(0,12).map(([name,revenue])=>({name:String(name).slice(0,75),revenue}));
@@ -307,22 +328,22 @@ function aiSummary(q){
 async function ask(){
  const q=$('question').value.trim();if(!q)return;
  $('answer').textContent='Analyzing current filtered records…';
- if(!$('ai').checked||!AI_CONFIGURED){$('answer').textContent='LOCAL VERIFIED CALCULATION\n'+localAnswer(q);return;}
+ if(!$('ai').checked||!ownerToken){$('answer').textContent='LOCAL VERIFIED CALCULATION\n'+localAnswer(q);return;}
  try{
   if(!filtered.length)throw Error('Load valid data first');
   const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),18000);
   let resp;
-  try{resp=await fetch(AI_API_BASE+'/api/ask',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(aiSummary(q)),signal:controller.signal});}finally{clearTimeout(timer);}
-  const out=await resp.json();if(!resp.ok)throw Error(out.error||'Server unavailable');
+  try{resp=await fetch(AI_API_BASE+'/api/ask',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+ownerToken},body:JSON.stringify(aiSummary(q)),signal:controller.signal});}finally{clearTimeout(timer);}
+  const out=await resp.json();if(!resp.ok){if(resp.status===401){ownerToken='';$('ai').checked=false;$('ai').disabled=true;$('ownerLogin').textContent='Owner AI sign-in';}throw Error(out.detail||out.error||'Server unavailable');}
   $('answer').textContent='AI EXPLANATION • REVIEW REQUIRED\n'+out.answer+'\n\nCalculated figures come from the current filtered CSV. Verify all decisions independently.';
  }catch(e){$('answer').textContent='Connected AI unavailable ('+e.message+').\n\nLOCAL FALLBACK\n'+localAnswer(q)}
 }
 function setupAI(){
- const checkbox=$('ai');checkbox.disabled=!AI_CONFIGURED;
- const label=checkbox.closest('label');if(label)label.lastChild.textContent=AI_CONFIGURED?' Enable connected AI (aggregated data only)':' Connected AI not configured — local mode';
- const mode=$('v8ChatMode');if(mode)mode.textContent=AI_CONFIGURED?'Local calculations • optional connected AI':'Local verified calculations • connected AI not configured';
+ const checkbox=$('ai');checkbox.disabled=true;checkbox.checked=false;
+ const label=checkbox.closest('label');if(label)label.lastChild.textContent=' Private connected AI (owner sign-in required)' ;
+ const mode=$('v8ChatMode');if(mode)mode.textContent='Local calculations • owner-only connected AI';
 }
-setupAI();
+setupAI();setupOwnerLogin();
 $('file').addEventListener('change',async e=>{if(e.target.files[0])loadCSV(await e.target.files[0].text())});$('region').addEventListener('change',render);$('category').addEventListener('change',render);$('ask').addEventListener('click',ask);$('question').addEventListener('keydown',e=>{if(e.key==='Enter')ask()});document.querySelectorAll('[data-q]').forEach(b=>b.onclick=()=>{$('question').value=b.dataset.q;ask()});$('export').onclick=()=>{if(!filtered.length)return;let s=`InsyveroAI summary (fictional/demo)\nRows: ${filtered.length}\nRevenue: ${money(sum(filtered,'Revenue'))}\nCost: ${money(sum(filtered,'Cost'))}\nGross profit: ${money(sum(filtered,'Revenue')-sum(filtered,'Cost'))}\nExcluded rows: ${issues.length}\nHuman review required.\n`;let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([s],{type:'text/plain'}));a.download='InsyveroAI_summary.txt';a.click();URL.revokeObjectURL(a.href)};
 const sample=`Order_ID,Date,Product,Category,Region,Customer_ID,Quantity,Unit_Price,Revenue,Cost\nORD-0001,2026-01-12,Notebook,Office,West,C001,3,18,54,30\nORD-0002,2026-02-05,Backpack,Lifestyle,East,C002,2,68,136,75\nORD-0003,2026-03-09,Keyboard,Electronics,West,C003,4,55,220,132\nORD-0004,2026-04-02,Desk Lamp,Home,Central,C004,2,45,90,51\nORD-0005,2026-05-17,Backpack,Lifestyle,South,C005,5,68,340,210\nORD-0006,2026-06-11,Notebook,Office,West,C006,4,18,72,38\nORD-0007,2026-07-19,Water Bottle,Lifestyle,East,C007,6,24,144,82\nORD-0008,2026-08-22,Wireless Mouse,Electronics,West,C008,3,32,96,54\nORD-0009,2026-09-03,Backpack,Lifestyle,South,C009,7,68,476,291`;
 $('sample').onclick=()=>loadCSV(sample);window.addEventListener('resize',()=>{if(valid.length)render()});
