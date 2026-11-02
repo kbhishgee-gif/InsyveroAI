@@ -1,0 +1,5 @@
+Date,Product,Region,Quantity,Revenue,Cost
+2026-01-01,Notebook,West,2,36,20
+2026-01-02,Notebook,West,1,,10
+2026-01-03,Mouse,East,3,96,54
+2026-01-04,Lamp,South,abc,45,25

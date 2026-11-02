@@ -1,0 +1,361 @@
+Order_ID,Date,Product,Category,Region,Customer_ID,Quantity,Unit_Price,Revenue,Cost
+ORD-0001,2026-02-27,Notebook,Office,East,C018,5,18,90,57.21
+ORD-0002,2026-02-14,Wireless Mouse,Electronics,West,C012,7,32,224,105.27
+ORD-0003,2026-09-16,Wireless Mouse,Electronics,East,C084,1,28.8,28.8,17.98
+ORD-0004,2026-08-03,Desk Lamp,Home,Central,C001,8,40.5,324.0,208.27
+ORD-0005,2026-03-23,Keyboard,Electronics,Central,C020,7,55,385,180.53
+ORD-0006,2026-06-22,Notebook,Office,West,C046,2,17.1,34.2,22.95
+ORD-0007,2026-05-16,Notebook,Office,West,C049,8,16.2,129.6,55.11
+ORD-0008,2026-05-31,Keyboard,Electronics,East,C009,6,49.5,297.0,123.16
+ORD-0009,2026-04-27,Water Bottle,Lifestyle,West,C049,2,24,48,23.47
+ORD-0010,2026-07-06,Desk Lamp,Home,East,C035,6,45,270,168.64
+ORD-0011,2026-02-06,Wireless Mouse,Electronics,East,C021,3,28.8,86.4,47.34
+ORD-0012,2026-05-19,Keyboard,Electronics,Central,C008,9,55,495,234.28
+ORD-0013,2026-01-17,Water Bottle,Lifestyle,West,C028,7,24,168,116.29
+ORD-0014,2026-06-11,Desk Lamp,Home,South,C019,8,42.75,342.0,165.79
+ORD-0015,2026-05-07,Keyboard,Electronics,Central,C075,9,49.5,445.5,239.28
+ORD-0016,2026-07-24,Water Bottle,Lifestyle,South,C012,4,24,96,61.62
+ORD-0017,2026-02-26,Desk Lamp,Home,West,C050,3,42.75,128.25,66.96
+ORD-0018,2026-08-28,Wireless Mouse,Electronics,West,C015,5,28.8,144.0,89.01
+ORD-0019,2026-05-17,Keyboard,Electronics,Central,C056,6,55,330,148.7
+ORD-0020,2026-01-02,Keyboard,Electronics,East,C065,5,49.5,247.5,171.28
+ORD-0021,2026-06-02,Keyboard,Electronics,East,C020,9,49.5,445.5,231.51
+ORD-0022,2026-03-24,Wireless Mouse,Electronics,Central,C063,9,32,288,116.99
+ORD-0023,2026-07-05,Water Bottle,Lifestyle,East,C073,4,24,96,67.49
+ORD-0024,2026-02-13,Keyboard,Electronics,East,C017,8,55,440,268.89
+ORD-0025,2026-03-26,Water Bottle,Lifestyle,South,C028,9,21.6,194.4,135.55
+ORD-0026,2026-04-13,Keyboard,Electronics,Central,C057,5,52.25,261.25,179.71
+ORD-0027,2026-08-20,Notebook,Office,West,C044,4,18,72,29.28
+ORD-0028,2026-04-28,Wireless Mouse,Electronics,West,C081,4,32,128,53.61
+ORD-0029,2026-02-04,Notebook,Office,East,C036,6,18,108,66.32
+ORD-0030,2026-04-20,Wireless Mouse,Electronics,South,C032,3,28.8,86.4,56.25
+ORD-0031,2026-07-28,Desk Lamp,Home,South,C046,2,45,90,48.2
+ORD-0032,2026-08-28,Keyboard,Electronics,West,C052,1,55,55,34.82
+ORD-0033,2026-02-25,Desk Lamp,Home,South,C018,4,45,180,96.3
+ORD-0034,2026-05-23,Backpack,Lifestyle,South,C071,4,68,272,117.32
+ORD-0035,2026-01-08,Notebook,Office,South,C063,4,18,72,39.89
+ORD-0036,2026-07-25,Notebook,Office,West,C050,3,17.1,51.3,24.87
+ORD-0037,2026-08-21,Water Bottle,Lifestyle,South,C020,7,21.6,151.2,69.67
+ORD-0038,2026-04-22,Notebook,Office,Central,C008,9,18,162,67.4
+ORD-0039,2026-09-02,Wireless Mouse,Electronics,West,C066,9,32,288,122.58
+ORD-0040,2026-04-06,Notebook,Office,South,C016,2,18,36,25.25
+ORD-0041,2026-05-07,Wireless Mouse,Electronics,West,C054,1,28.8,28.8,17.58
+ORD-0042,2026-09-25,Water Bottle,Lifestyle,Central,C031,5,24,120,58.2
+ORD-0043,2026-03-09,Keyboard,Electronics,Central,C010,5,52.25,261.25,105.28
+ORD-0044,2026-02-21,Notebook,Office,Central,C017,9,18,162,113.18
+ORD-0045,2026-02-05,Desk Lamp,Home,East,C057,6,45,270,180.04
+ORD-0046,2026-06-04,Wireless Mouse,Electronics,Central,C014,9,32,288,201.73
+ORD-0047,2026-03-10,Water Bottle,Lifestyle,East,C035,2,24,48,23.53
+ORD-0048,2026-04-18,Keyboard,Electronics,Central,C065,6,55,330,183.59
+ORD-0049,2026-01-27,Notebook,Office,West,C001,7,18,126,63.85
+ORD-0050,2026-03-08,Keyboard,Electronics,South,C071,5,55,275,172.1
+ORD-0051,2026-01-05,Notebook,Office,West,C048,2,18,36,21.11
+ORD-0052,2026-03-17,Backpack,Lifestyle,Central,C047,3,68,204,140.29
+ORD-0053,2026-01-21,Water Bottle,Lifestyle,West,C046,4,24,96,62.37
+ORD-0054,2026-07-28,Wireless Mouse,Electronics,East,C023,3,32,96,65.48
+ORD-0055,2026-01-13,Desk Lamp,Home,East,C035,6,42.75,256.5,115.67
+ORD-0056,2026-02-25,Backpack,Lifestyle,East,C026,1,64.6,64.6,42.72
+ORD-0057,2026-08-24,Water Bottle,Lifestyle,East,C004,5,24,120,73.35
+ORD-0058,2026-07-24,Water Bottle,Lifestyle,Central,C045,5,24,120,72.63
+ORD-0059,2026-07-24,Keyboard,Electronics,West,C015,9,55,495,336.92
+ORD-0060,2026-05-14,Desk Lamp,Home,West,C077,5,45,225,121.29
+ORD-0061,2026-06-10,Backpack,Lifestyle,South,C074,9,68,612,282.03
+ORD-0062,2026-01-23,Keyboard,Electronics,East,C047,7,55,385,207.14
+ORD-0063,2026-06-19,Wireless Mouse,Electronics,Central,C065,6,32,192,95.8
+ORD-0064,2026-07-29,Water Bottle,Lifestyle,East,C025,7,24,168,89.8
+ORD-0065,2026-07-14,Keyboard,Electronics,Central,C052,3,49.5,148.5,85.44
+ORD-0066,2026-01-01,Water Bottle,Lifestyle,South,C075,5,24,120,71.3
+ORD-0067,2026-06-14,Backpack,Lifestyle,East,C066,8,64.6,516.8,284.97
+ORD-0068,2026-03-28,Keyboard,Electronics,Central,C012,2,55,110,72.81
+ORD-0069,2026-05-01,Keyboard,Electronics,East,C019,5,55,275,112.15
+ORD-0070,2026-05-06,Backpack,Lifestyle,South,C081,2,64.6,129.2,75.48
+ORD-0071,2026-07-16,Backpack,Lifestyle,East,C084,7,68,476,295.14
+ORD-0072,2026-02-24,Backpack,Lifestyle,South,C007,4,68,272,157.32
+ORD-0073,2026-03-04,Backpack,Lifestyle,Central,C057,3,64.6,193.8,115.51
+ORD-0074,2026-09-16,Backpack,Lifestyle,East,C061,9,64.6,581.4,316.29
+ORD-0075,2026-05-07,Keyboard,Electronics,South,C081,5,49.5,247.5,117.95
+ORD-0076,2026-08-14,Notebook,Office,Central,C043,5,18,90,45.21
+ORD-0077,2026-02-11,Desk Lamp,Home,South,C020,3,45,135,84.52
+ORD-0078,2026-02-02,Backpack,Lifestyle,South,C054,7,68,476,199.88
+ORD-0079,2026-08-04,Backpack,Lifestyle,South,C062,1,61.2,61.2,24.6
+ORD-0080,2026-06-30,Water Bottle,Lifestyle,East,C063,7,22.8,159.6,75.05
+ORD-0081,2026-08-12,Backpack,Lifestyle,Central,C052,1,64.6,64.6,40.81
+ORD-0082,2026-08-28,Desk Lamp,Home,South,C076,9,45,405,235.15
+ORD-0083,2026-01-14,Notebook,Office,South,C024,7,18,126,52.43
+ORD-0084,2026-07-14,Water Bottle,Lifestyle,Central,C044,4,22.8,91.2,58.7
+ORD-0085,2026-07-14,Water Bottle,Lifestyle,West,C061,7,24,168,68.24
+ORD-0086,2026-01-27,Water Bottle,Lifestyle,West,C004,4,24,96,67.57
+ORD-0087,2026-04-13,Notebook,Office,East,C061,3,18,54,33.17
+ORD-0088,2026-04-22,Backpack,Lifestyle,East,C078,5,68,340,202.07
+ORD-0089,2026-02-28,Desk Lamp,Home,West,C040,5,45,225,131.46
+ORD-0090,2026-07-12,Backpack,Lifestyle,East,C014,4,68,272,169.48
+ORD-0091,2026-06-04,Keyboard,Electronics,West,C045,2,49.5,99.0,56.48
+ORD-0092,2026-07-09,Notebook,Office,West,C054,9,18,162,107.43
+ORD-0093,2026-02-24,Backpack,Lifestyle,East,C056,6,64.6,387.6,176.89
+ORD-0094,2026-09-25,Keyboard,Electronics,South,C060,5,49.5,247.5,133.5
+ORD-0095,2026-05-18,Water Bottle,Lifestyle,Central,C058,4,24,96,45.89
+ORD-0096,2026-08-26,Wireless Mouse,Electronics,West,C064,7,32,224,150.6
+ORD-0097,2026-04-04,Backpack,Lifestyle,Central,C044,4,68,272,133.14
+ORD-0098,2026-05-22,Wireless Mouse,Electronics,East,C011,1,28.8,28.8,13.74
+ORD-0099,2026-07-28,Backpack,Lifestyle,South,C083,9,68,612,384.21
+ORD-0100,2026-08-18,Notebook,Office,East,C052,2,18,36,22.37
+ORD-0101,2026-06-06,Keyboard,Electronics,Central,C055,6,52.25,313.5,225.38
+ORD-0102,2026-06-19,Water Bottle,Lifestyle,Central,C033,8,24,192,90.96
+ORD-0103,2026-04-09,Water Bottle,Lifestyle,East,C025,2,21.6,43.2,20.27
+ORD-0104,2026-09-05,Water Bottle,Lifestyle,Central,C013,9,21.6,194.4,129.56
+ORD-0105,2026-06-01,Desk Lamp,Home,Central,C002,6,45,270,169.17
+ORD-0106,2026-03-06,Water Bottle,Lifestyle,Central,C017,1,24,24,14.5
+ORD-0107,2026-09-09,Notebook,Office,Central,C061,1,16.2,16.2,8.96
+ORD-0108,2026-06-24,Desk Lamp,Home,South,C015,1,45,45,29.84
+ORD-0109,2026-07-25,Backpack,Lifestyle,West,C020,2,61.2,122.4,54.8
+ORD-0110,2026-06-05,Notebook,Office,South,C078,4,18,72,42.53
+ORD-0111,2026-04-26,Wireless Mouse,Electronics,South,C039,7,30.4,212.8,143.69
+ORD-0112,2026-08-08,Water Bottle,Lifestyle,West,C027,1,21.6,21.6,12.96
+ORD-0113,2026-05-16,Keyboard,Electronics,East,C023,2,55,110,63.43
+ORD-0114,2026-03-22,Notebook,Office,South,C038,7,17.1,119.7,49.13
+ORD-0115,2026-05-28,Keyboard,Electronics,West,C030,5,52.25,261.25,181.74
+ORD-0116,2026-04-12,Backpack,Lifestyle,East,C083,2,61.2,122.4,54.8
+ORD-0117,2026-05-17,Desk Lamp,Home,East,C040,2,45,90,53.14
+ORD-0118,2026-05-28,Backpack,Lifestyle,Central,C052,2,64.6,129.2,90.65
+ORD-0119,2026-09-14,Wireless Mouse,Electronics,West,C077,8,30.4,243.2,100.38
+ORD-0120,2026-08-10,Keyboard,Electronics,Central,C004,6,49.5,297.0,127.48
+ORD-0121,2026-01-11,Keyboard,Electronics,West,C023,5,49.5,247.5,136.26
+ORD-0122,2026-08-15,Water Bottle,Lifestyle,South,C082,3,21.6,64.8,42.8
+ORD-0123,2026-02-16,Backpack,Lifestyle,Central,C042,6,64.6,387.6,238.16
+ORD-0124,2026-03-24,Water Bottle,Lifestyle,Central,C052,7,22.8,159.6,105.39
+ORD-0125,2026-01-19,Backpack,Lifestyle,Central,C042,2,68,136,59.44
+ORD-0126,2026-07-26,Wireless Mouse,Electronics,South,C053,1,28.8,28.8,12.02
+ORD-0127,2026-09-23,Water Bottle,Lifestyle,West,C027,8,22.8,182.4,88.55
+ORD-0128,2026-03-09,Water Bottle,Lifestyle,West,C004,8,22.8,182.4,129.76
+ORD-0129,2026-05-03,Keyboard,Electronics,West,C071,3,55,165,87.54
+ORD-0130,2026-04-26,Notebook,Office,East,C064,8,18,144,100.58
+ORD-0131,2026-05-30,Wireless Mouse,Electronics,South,C061,5,30.4,152.0,72.66
+ORD-0132,2026-03-16,Backpack,Lifestyle,East,C009,4,61.2,244.8,119.56
+ORD-0133,2026-08-01,Water Bottle,Lifestyle,West,C037,9,24,216,136.58
+ORD-0134,2026-09-08,Desk Lamp,Home,South,C045,8,40.5,324.0,164.07
+ORD-0135,2026-07-13,Backpack,Lifestyle,East,C074,6,68,408,213.2
+ORD-0136,2026-07-30,Notebook,Office,South,C050,6,17.1,102.6,73.49
+ORD-0137,2026-03-19,Backpack,Lifestyle,Central,C013,1,68,68,46.22
+ORD-0138,2026-08-14,Notebook,Office,West,C019,9,17.1,153.9,81.75
+ORD-0139,2026-03-21,Notebook,Office,Central,C080,8,18,144,89.52
+ORD-0140,2026-02-11,Water Bottle,Lifestyle,Central,C081,9,22.8,205.2,129.27
+ORD-0141,2026-09-07,Wireless Mouse,Electronics,West,C031,1,28.8,28.8,17.34
+ORD-0142,2026-05-28,Desk Lamp,Home,West,C082,2,42.75,85.5,53.46
+ORD-0143,2026-02-21,Backpack,Lifestyle,West,C006,3,68,204,102.78
+ORD-0144,2026-01-29,Water Bottle,Lifestyle,South,C019,6,24,144,68.85
+ORD-0145,2026-07-30,Wireless Mouse,Electronics,East,C011,3,32,96,57.12
+ORD-0146,2026-07-15,Wireless Mouse,Electronics,East,C030,4,30.4,121.6,66.58
+ORD-0147,2026-05-11,Backpack,Lifestyle,South,C037,5,68,340,209.72
+ORD-0148,2026-03-22,Notebook,Office,Central,C082,8,18,144,101.93
+ORD-0149,2026-05-09,Backpack,Lifestyle,South,C062,5,68,340,147.6
+ORD-0150,2026-07-15,Wireless Mouse,Electronics,Central,C038,6,28.8,172.8,70.33
+ORD-0151,2026-07-22,Water Bottle,Lifestyle,West,C078,1,21.6,21.6,13.79
+ORD-0152,2026-05-27,Desk Lamp,Home,East,C080,6,45,270,129.65
+ORD-0153,2026-03-12,Keyboard,Electronics,Central,C057,2,55,110,45.17
+ORD-0154,2026-07-06,Keyboard,Electronics,Central,C042,3,55,165,105.47
+ORD-0155,2026-03-31,Desk Lamp,Home,Central,C068,3,40.5,121.5,68.11
+ORD-0156,2026-05-20,Desk Lamp,Home,Central,C044,5,42.75,213.75,140.51
+ORD-0157,2026-08-28,Notebook,Office,South,C072,3,18,54,27.92
+ORD-0158,2026-07-22,Notebook,Office,West,C059,5,16.2,81.0,41.95
+ORD-0159,2026-05-15,Wireless Mouse,Electronics,West,C030,7,32,224,123.4
+ORD-0160,2026-06-17,Wireless Mouse,Electronics,South,C039,4,32,128,77.79
+ORD-0161,2026-03-01,Desk Lamp,Home,Central,C064,1,45,45,19.67
+ORD-0162,2026-05-01,Wireless Mouse,Electronics,South,C048,3,30.4,91.2,56.05
+ORD-0163,2026-08-03,Wireless Mouse,Electronics,West,C063,3,30.4,91.2,54.45
+ORD-0164,2026-05-24,Notebook,Office,South,C057,6,18,108,76.05
+ORD-0165,2026-07-05,Notebook,Office,Central,C008,6,16.2,97.2,51.26
+ORD-0166,2026-04-08,Notebook,Office,East,C083,8,18,144,87.07
+ORD-0167,2026-01-11,Notebook,Office,East,C073,6,18,108,50.29
+ORD-0168,2026-04-17,Wireless Mouse,Electronics,Central,C019,4,32,128,83.5
+ORD-0169,2026-01-02,Water Bottle,Lifestyle,Central,C023,3,24,72,31.33
+ORD-0170,2026-01-14,Desk Lamp,Home,East,C076,1,45,45,22.66
+ORD-0171,2026-03-31,Water Bottle,Lifestyle,South,C068,1,24,24,10.47
+ORD-0172,2026-02-02,Backpack,Lifestyle,West,C058,8,68,544,305.31
+ORD-0173,2026-01-23,Keyboard,Electronics,South,C083,9,55,495,350.7
+ORD-0174,2026-02-01,Backpack,Lifestyle,West,C063,7,64.6,452.2,283.97
+ORD-0175,2026-08-16,Notebook,Office,East,C009,2,18,36,15.85
+ORD-0176,2026-06-16,Backpack,Lifestyle,South,C065,9,68,612,363.37
+ORD-0177,2026-02-20,Keyboard,Electronics,East,C056,2,49.5,99.0,53.91
+ORD-0178,2026-04-27,Backpack,Lifestyle,South,C054,6,64.6,387.6,245.54
+ORD-0179,2026-06-10,Backpack,Lifestyle,Central,C020,6,68,408,252.87
+ORD-0180,2026-08-31,Notebook,Office,West,C056,2,18,36,15.51
+ORD-0181,2026-07-10,Desk Lamp,Home,Central,C016,9,45,405,215.24
+ORD-0182,2026-08-05,Keyboard,Electronics,Central,C046,1,55,55,23.82
+ORD-0183,2026-09-17,Desk Lamp,Home,East,C014,3,42.75,128.25,65.67
+ORD-0184,2026-07-08,Notebook,Office,East,C055,5,16.2,81.0,54.31
+ORD-0185,2026-01-14,Wireless Mouse,Electronics,East,C035,5,32,160,99.98
+ORD-0186,2026-06-08,Water Bottle,Lifestyle,East,C019,6,24,144,83.7
+ORD-0187,2026-07-25,Notebook,Office,West,C068,3,18,54,25.32
+ORD-0188,2026-08-03,Backpack,Lifestyle,Central,C040,6,68,408,257.41
+ORD-0189,2026-02-13,Notebook,Office,West,C011,3,18,54,26.3
+ORD-0190,2026-08-06,Backpack,Lifestyle,Central,C028,8,64.6,516.8,331.57
+ORD-0191,2026-02-28,Water Bottle,Lifestyle,Central,C076,7,24,168,93.36
+ORD-0192,2026-06-07,Notebook,Office,West,C001,4,17.1,68.4,31.83
+ORD-0193,2026-04-19,Desk Lamp,Home,Central,C016,5,45,225,90.56
+ORD-0194,2026-08-09,Desk Lamp,Home,East,C065,3,42.75,128.25,74.23
+ORD-0195,2026-07-01,Notebook,Office,South,C003,7,18,126,68.94
+ORD-0196,2026-02-09,Water Bottle,Lifestyle,South,C082,7,21.6,151.2,80.69
+ORD-0197,2026-02-28,Backpack,Lifestyle,East,C080,1,68,68,37.21
+ORD-0198,2026-07-05,Notebook,Office,East,C056,7,18,126,74.14
+ORD-0199,2026-09-26,Notebook,Office,Central,C029,7,18,126,63.83
+ORD-0200,2026-03-28,Notebook,Office,East,C045,9,18,162,83.0
+ORD-0201,2026-03-17,Desk Lamp,Home,Central,C026,2,45,90,41.0
+ORD-0202,2026-03-20,Keyboard,Electronics,South,C060,2,55,110,70.56
+ORD-0203,2026-08-18,Keyboard,Electronics,East,C057,6,55,330,139.21
+ORD-0204,2026-08-15,Keyboard,Electronics,West,C046,5,55,275,154.65
+ORD-0205,2026-06-08,Backpack,Lifestyle,West,C048,8,68,544,362.38
+ORD-0206,2026-02-09,Keyboard,Electronics,South,C060,2,49.5,99.0,57.98
+ORD-0207,2026-01-22,Backpack,Lifestyle,South,C065,4,68,272,121.93
+ORD-0208,2026-02-01,Backpack,Lifestyle,West,C065,2,68,136,82.52
+ORD-0209,2026-01-21,Desk Lamp,Home,East,C047,8,42.75,342.0,177.6
+ORD-0210,2026-05-25,Backpack,Lifestyle,West,C081,7,68,476,289.0
+ORD-0211,2026-02-03,Water Bottle,Lifestyle,South,C037,2,21.6,43.2,20.76
+ORD-0212,2026-03-18,Water Bottle,Lifestyle,East,C045,2,21.6,43.2,21.57
+ORD-0213,2026-07-20,Desk Lamp,Home,South,C083,2,45,90,58.8
+ORD-0214,2026-03-07,Keyboard,Electronics,South,C066,9,55,495,255.31
+ORD-0215,2026-07-05,Water Bottle,Lifestyle,Central,C063,3,24,72,33.22
+ORD-0216,2026-03-12,Desk Lamp,Home,West,C065,2,45,90,58.2
+ORD-0217,2026-09-27,Notebook,Office,East,C077,6,16.2,97.2,50.6
+ORD-0218,2026-03-25,Desk Lamp,Home,West,C053,3,42.75,128.25,66.25
+ORD-0219,2026-05-02,Backpack,Lifestyle,East,C069,5,64.6,323.0,153.92
+ORD-0220,2026-08-29,Desk Lamp,Home,South,C060,6,40.5,243.0,157.03
+ORD-0221,2026-07-15,Wireless Mouse,Electronics,East,C026,9,30.4,273.6,179.59
+ORD-0222,2026-03-12,Water Bottle,Lifestyle,Central,C071,1,22.8,22.8,15.94
+ORD-0223,2026-09-22,Notebook,Office,East,C035,5,18,90,48.94
+ORD-0224,2026-09-20,Desk Lamp,Home,East,C058,7,45,315,215.17
+ORD-0225,2026-01-14,Backpack,Lifestyle,Central,C031,1,64.6,64.6,33.82
+ORD-0226,2026-02-11,Water Bottle,Lifestyle,Central,C013,4,24,96,64.18
+ORD-0227,2026-06-21,Desk Lamp,Home,Central,C061,3,45,135,84.07
+ORD-0228,2026-03-13,Keyboard,Electronics,West,C011,8,52.25,418.0,169.74
+ORD-0229,2026-04-21,Desk Lamp,Home,South,C015,9,40.5,364.5,236.33
+ORD-0230,2026-05-02,Water Bottle,Lifestyle,East,C054,2,24,48,29.01
+ORD-0231,2026-08-23,Notebook,Office,West,C081,2,17.1,34.2,19.32
+ORD-0232,2026-05-04,Keyboard,Electronics,South,C001,3,55,165,98.46
+ORD-0233,2026-05-04,Wireless Mouse,Electronics,West,C068,7,32,224,159.46
+ORD-0234,2026-02-04,Wireless Mouse,Electronics,West,C050,9,28.8,259.2,176.12
+ORD-0235,2026-01-23,Keyboard,Electronics,Central,C003,7,55,385,197.99
+ORD-0236,2026-02-04,Water Bottle,Lifestyle,Central,C018,4,24,96,39.76
+ORD-0237,2026-06-23,Keyboard,Electronics,South,C081,3,52.25,156.75,71.84
+ORD-0238,2026-03-11,Notebook,Office,Central,C026,8,18,144,59.62
+ORD-0239,2026-04-13,Notebook,Office,South,C070,6,18,108,59.56
+ORD-0240,2026-01-19,Keyboard,Electronics,Central,C007,4,55,220,148.95
+ORD-0241,2026-06-19,Water Bottle,Lifestyle,South,C052,2,24,48,30.62
+ORD-0242,2026-07-17,Water Bottle,Lifestyle,South,C048,3,22.8,68.4,47.59
+ORD-0243,2026-09-23,Water Bottle,Lifestyle,West,C056,2,22.8,45.6,27.03
+ORD-0244,2026-04-03,Wireless Mouse,Electronics,West,C011,5,32,160,80.79
+ORD-0245,2026-06-01,Water Bottle,Lifestyle,South,C022,8,21.6,172.8,107.26
+ORD-0246,2026-06-29,Backpack,Lifestyle,South,C036,1,68,68,41.11
+ORD-0247,2026-01-30,Notebook,Office,East,C004,7,18,126,56.16
+ORD-0248,2026-08-13,Notebook,Office,East,C083,3,18,54,27.93
+ORD-0249,2026-07-16,Wireless Mouse,Electronics,East,C058,1,28.8,28.8,20.26
+ORD-0250,2026-07-10,Backpack,Lifestyle,East,C068,2,61.2,122.4,63.33
+ORD-0251,2026-06-10,Keyboard,Electronics,West,C004,5,55,275,174.74
+ORD-0252,2026-09-13,Wireless Mouse,Electronics,West,C034,7,28.8,201.6,130.63
+ORD-0253,2026-08-17,Desk Lamp,Home,East,C016,5,42.75,213.75,94.78
+ORD-0254,2026-02-07,Backpack,Lifestyle,West,C041,3,64.6,193.8,118.94
+ORD-0255,2026-02-03,Wireless Mouse,Electronics,Central,C021,9,32,288,180.8
+ORD-0256,2026-03-31,Water Bottle,Lifestyle,West,C026,9,24,216,141.15
+ORD-0257,2026-05-02,Backpack,Lifestyle,Central,C060,1,68,68,44.69
+ORD-0258,2026-03-08,Wireless Mouse,Electronics,Central,C051,2,32,64,46.07
+ORD-0259,2026-09-03,Wireless Mouse,Electronics,West,C017,7,30.4,212.8,151.34
+ORD-0260,2026-02-07,Backpack,Lifestyle,Central,C017,8,61.2,489.6,333.39
+ORD-0261,2026-04-04,Desk Lamp,Home,West,C016,7,40.5,283.5,160.4
+ORD-0262,2026-06-05,Desk Lamp,Home,East,C045,3,45,135,94.93
+ORD-0263,2026-09-23,Water Bottle,Lifestyle,East,C082,2,24,48,33.89
+ORD-0264,2026-05-21,Desk Lamp,Home,West,C065,5,40.5,202.5,122.54
+ORD-0265,2026-03-20,Desk Lamp,Home,West,C004,6,40.5,243.0,103.52
+ORD-0266,2026-05-16,Keyboard,Electronics,South,C080,4,49.5,198.0,119.69
+ORD-0267,2026-09-12,Keyboard,Electronics,Central,C062,9,55,495,236.79
+ORD-0268,2026-07-27,Water Bottle,Lifestyle,West,C021,8,24,192,103.81
+ORD-0269,2026-09-05,Backpack,Lifestyle,East,C041,4,68,272,183.78
+ORD-0270,2026-06-13,Keyboard,Electronics,East,C048,6,52.25,313.5,177.06
+ORD-0271,2026-02-24,Water Bottle,Lifestyle,West,C035,4,22.8,91.2,49.6
+ORD-0272,2026-03-14,Notebook,Office,South,C079,1,18,18,9.61
+ORD-0273,2026-03-23,Water Bottle,Lifestyle,East,C064,6,24,144,103.49
+ORD-0274,2026-08-28,Backpack,Lifestyle,West,C012,5,64.6,323.0,226.9
+ORD-0275,2026-09-16,Backpack,Lifestyle,Central,C007,4,68,272,113.2
+ORD-0276,2026-09-11,Wireless Mouse,Electronics,West,C014,8,32,256,137.7
+ORD-0277,2026-05-16,Keyboard,Electronics,Central,C006,6,52.25,313.5,165.59
+ORD-0278,2026-04-10,Water Bottle,Lifestyle,West,C050,9,24,216,121.25
+ORD-0279,2026-05-24,Wireless Mouse,Electronics,West,C051,2,32,64,33.24
+ORD-0280,2026-06-23,Wireless Mouse,Electronics,East,C078,6,32,192,108.08
+ORD-0281,2026-09-14,Notebook,Office,East,C043,1,18,18,11.83
+ORD-0282,2026-09-23,Backpack,Lifestyle,East,C042,3,61.2,183.6,128.16
+ORD-0283,2026-06-13,Desk Lamp,Home,Central,C076,7,40.5,283.5,143.92
+ORD-0284,2026-09-18,Wireless Mouse,Electronics,Central,C061,8,28.8,230.4,152.3
+ORD-0285,2026-07-08,Water Bottle,Lifestyle,Central,C081,2,22.8,45.6,18.63
+ORD-0286,2026-08-31,Water Bottle,Lifestyle,South,C022,4,24,96,54.5
+ORD-0287,2026-07-14,Desk Lamp,Home,West,C025,4,45,180,73.09
+ORD-0288,2026-06-10,Backpack,Lifestyle,East,C053,3,64.6,193.8,108.64
+ORD-0289,2026-08-30,Keyboard,Electronics,East,C072,1,55,55,27.72
+ORD-0290,2026-09-02,Wireless Mouse,Electronics,East,C059,7,32,224,154.98
+ORD-0291,2026-06-25,Wireless Mouse,Electronics,South,C025,6,32,192,135.62
+ORD-0292,2026-05-23,Wireless Mouse,Electronics,Central,C037,5,32,160,100.09
+ORD-0293,2026-09-08,Water Bottle,Lifestyle,Central,C037,8,24,192,84.29
+ORD-0294,2026-07-14,Backpack,Lifestyle,Central,C006,6,68,408,200.75
+ORD-0295,2026-02-10,Water Bottle,Lifestyle,South,C028,8,24,192,89.22
+ORD-0296,2026-05-19,Wireless Mouse,Electronics,West,C079,5,32,160,101.93
+ORD-0297,2026-05-03,Desk Lamp,Home,East,C082,1,40.5,40.5,19.22
+ORD-0298,2026-02-21,Backpack,Lifestyle,West,C018,6,64.6,387.6,155.68
+ORD-0299,2026-03-22,Backpack,Lifestyle,East,C037,8,64.6,516.8,259.83
+ORD-0300,2026-01-31,Notebook,Office,West,C023,4,16.2,64.8,34.59
+ORD-0301,2026-04-01,Notebook,Office,East,C038,7,17.1,119.7,81.46
+ORD-0302,2026-01-05,Water Bottle,Lifestyle,Central,C059,2,24,48,34.39
+ORD-0303,2026-09-26,Backpack,Lifestyle,South,C035,3,61.2,183.6,84.77
+ORD-0304,2026-02-27,Water Bottle,Lifestyle,Central,C024,3,22.8,68.4,27.67
+ORD-0305,2026-06-22,Water Bottle,Lifestyle,South,C055,4,24,96,54.23
+ORD-0306,2026-02-14,Backpack,Lifestyle,East,C062,2,68,136,68.48
+ORD-0307,2026-05-08,Notebook,Office,East,C058,5,17.1,85.5,54.82
+ORD-0308,2026-06-18,Water Bottle,Lifestyle,Central,C031,1,24,24,10.08
+ORD-0309,2026-03-02,Backpack,Lifestyle,South,C065,5,68,340,236.43
+ORD-0310,2026-06-09,Keyboard,Electronics,Central,C079,2,55,110,51.77
+ORD-0311,2026-03-10,Backpack,Lifestyle,Central,C054,3,64.6,193.8,121.05
+ORD-0312,2026-08-30,Wireless Mouse,Electronics,West,C068,4,32,128,69.5
+ORD-0313,2026-07-05,Notebook,Office,East,C074,2,18,36,20.58
+ORD-0314,2026-03-26,Water Bottle,Lifestyle,West,C027,9,22.8,205.2,129.16
+ORD-0315,2026-09-08,Notebook,Office,West,C059,9,17.1,153.9,68.06
+ORD-0316,2026-08-01,Backpack,Lifestyle,South,C040,1,61.2,61.2,38.64
+ORD-0317,2026-07-22,Water Bottle,Lifestyle,West,C006,1,24,24,12.85
+ORD-0318,2026-02-02,Wireless Mouse,Electronics,South,C005,1,32,32,15.74
+ORD-0319,2026-04-03,Desk Lamp,Home,South,C058,7,45,315,213.66
+ORD-0320,2026-07-13,Backpack,Lifestyle,East,C084,2,61.2,122.4,82.66
+ORD-0321,2026-03-02,Desk Lamp,Home,East,C029,9,42.75,384.75,256.68
+ORD-0322,2026-01-12,Water Bottle,Lifestyle,South,C069,8,21.6,172.8,90.09
+ORD-0323,2026-04-28,Desk Lamp,Home,East,C036,8,45,360,165.71
+ORD-0324,2026-02-27,Notebook,Office,West,C031,7,16.2,113.4,52.84
+ORD-0325,2026-02-21,Wireless Mouse,Electronics,West,C032,1,30.4,30.4,19.36
+ORD-0326,2026-07-25,Backpack,Lifestyle,East,C008,4,61.2,244.8,108.9
+ORD-0327,2026-05-29,Desk Lamp,Home,Central,C031,6,40.5,243.0,120.67
+ORD-0328,2026-03-15,Keyboard,Electronics,South,C039,9,55,495,241.58
+ORD-0329,2026-03-31,Keyboard,Electronics,South,C007,7,49.5,346.5,246.41
+ORD-0330,2026-07-15,Wireless Mouse,Electronics,South,C020,6,30.4,182.4,90.46
+ORD-0331,2026-04-05,Wireless Mouse,Electronics,East,C039,8,32,256,172.65
+ORD-0332,2026-03-15,Backpack,Lifestyle,South,C054,1,61.2,61.2,35.39
+ORD-0333,2026-03-10,Backpack,Lifestyle,East,C043,4,68,272,165.09
+ORD-0334,2026-08-19,Water Bottle,Lifestyle,East,C007,2,21.6,43.2,20.99
+ORD-0335,2026-01-21,Notebook,Office,East,C062,4,16.2,64.8,30.25
+ORD-0336,2026-06-20,Water Bottle,Lifestyle,East,C016,1,24,24,15.34
+ORD-0337,2026-09-03,Desk Lamp,Home,East,C071,4,42.75,171.0,86.0
+ORD-0338,2026-05-25,Backpack,Lifestyle,Central,C040,8,61.2,489.6,236.82
+ORD-0339,2026-09-20,Backpack,Lifestyle,South,C041,8,68,544,376.77
+ORD-0340,2026-07-09,Water Bottle,Lifestyle,East,C019,7,24,168,68.07
+ORD-0341,2026-08-02,Water Bottle,Lifestyle,Central,C030,3,24,72,37.55
+ORD-0342,2026-05-06,Backpack,Lifestyle,Central,C063,9,68,612,434.08
+ORD-0343,2026-09-09,Backpack,Lifestyle,East,C018,3,68,204,128.62
+ORD-0344,2026-09-08,Desk Lamp,Home,West,C010,9,45,405,284.5
+ORD-0345,2026-01-25,Notebook,Office,East,C009,7,18,126,78.91
+ORD-0346,2026-01-05,Desk Lamp,Home,Central,C008,9,42.75,384.75,229.97
+ORD-0347,2026-09-05,Keyboard,Electronics,West,C069,8,55,440,253.67
+ORD-0348,2026-01-07,Notebook,Office,Central,C003,9,18,162,90.83
+ORD-0349,2026-08-09,Desk Lamp,Home,East,C031,2,45,90,41.53
+ORD-0350,2026-09-27,Water Bottle,Lifestyle,South,C011,6,24,144,74.79
+ORD-0351,2026-07-27,Backpack,Lifestyle,Central,C011,4,68,272,165.7
+ORD-0352,2026-01-17,Notebook,Office,South,C071,7,17.1,119.7,66.11
+ORD-0353,2026-01-05,Keyboard,Electronics,South,C056,3,55,165,100.05
+ORD-0354,2026-06-19,Wireless Mouse,Electronics,West,C030,2,28.8,57.6,26.94
+ORD-0355,2026-09-01,Water Bottle,Lifestyle,Central,C070,1,24,24,13.93
+ORD-0356,2026-01-17,Desk Lamp,Home,East,C076,6,45,270,120.46
+ORD-0357,2026-07-23,Notebook,Office,East,C073,5,18,90,60.04
+ORD-0358,2026-07-19,Keyboard,Electronics,South,C018,9,55,495,323.21
+ORD-0359,2026-02-10,Wireless Mouse,Electronics,West,C056,6,32,192,91.06
+ORD-0360,2026-02-08,Water Bottle,Lifestyle,West,C082,7,24,168,81.89
